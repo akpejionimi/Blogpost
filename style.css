@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    font-family: 'PT Serif', serif;
+    
+}
+.navbar{
+background-color: white;
+text-align: center;
+
+}
+.banner{
+    background-image: url('divi-full.jpg');
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.container{
+    font-size: 18px;
+    width: 800px;
+    margin: 0 auto;  
+}
+.banner-info{
+    width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.down-page{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.pic-size{
+    width: 75%;
+}
+.down-page-details{
+    margin-top: -30px;
+    margin-left: -70px;
+}
+.banner{
+    animation-name: blogspot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    box-shadow: 3px 4px 10px black;
+}
+@keyframes blogspot{
+    0%{transform: translateY(0px);}
+    50%{transform: translatey(-30px);}
+    100%{transform: translatey(0px);}
+}
+@media screen and (max-width:800px){
+    main{
+        background-color: white;
+        background: linear-gradient(to left, #5a2bba 10%, #1ca4f6 100%); 
+    }
+    .navbar{
+        background: linear-gradient(to left, #5a2bba 10%, #1ca4f6 100%); 
+        color: white;
+    }
+    
+    .down-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-info{
+       text-align: center;
+       margin: 0 auto;
+       width: 400px;
+        
+    }
+    .container{
+        font-size: 18px;
+        width: 60%;
+        color: white;
+    }
+    .container h2{
+        color: white;
+    }
+    }
